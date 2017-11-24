@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RQUOTE_RQUOTE_CREATE_DEFAULT_TITLE">
+		<message>COM_RQUOTE_RQUOTE_CREATE_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+	>
+	    <fieldset name="request">
+             <field name="catid"
+                type="category"
+				description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+				extension="com_rquote"
+				label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+				required="false"
+			/>
+				<field name="published"
+                type="list"
+                default="0"
+                label="JPUBLISHED"
+				description="JGLOBAL_CHOOSE_CATEGORY_DESC">
+				<option value ="0">JNO</option>
+	 			<option value ="1">JYES</option>
+				
+			</field>	
+				
+				
+			
+            </fieldset>
+	</fields>
+</metadata>
+

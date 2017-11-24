@@ -1,0 +1,84 @@
+/* for com_rquotes view: */
+
+
+/*show quote quotation marks no*/
+.com_rquote_quote {
+	font-weight:bold;
+  font-style:italic;
+  color:blue;
+}
+/*show quote quotation marks yes. used for before quotation mark*/
+/*
+.com_rquote_quote  p    :before {
+    content: " “ ";
+    font-size: 40px;
+    font-weight: bold;
+    line-height:20px;
+    color:;
+    position:;
+    top:;
+}
+*/
+
+/* show quote quotation marks yes. used for after quotation mark */
+/*
+.com_rquote_quote p :after {
+    content: " ”";
+    font-size: 40px;
+    font-weight: bold;
+    line-height:20px;
+    position:;
+    color:
+}
+*/
+
+/*use to control author */
+.com_rquote_author {
+  display:block;
+  text-align: right;
+  color: red;
+}
+/*use to control notes */
+.com_rquote_notes {
+  
+  text-align: right;
+  color: orange;
+}
+/*use to control user_name */
+.com_rquote_user_name {
+  display:block;
+  text-align: right;
+}
+/*use to control create_date */
+.com_rquote_createdate {
+  display:block;
+  text-align: left;
+  color: orange;
+}
+
+/*use to control create form */
+#com_rquote_create_form {
+  width:;
+  color: blue;
+}
+/* for the creation view: */
+#com_rquote_create_form input[type=text] {
+ 
+	width: 400px;
+	
+}
+
+.com_rquote_create_input_label {
+  display: block;
+  font-weight: bold;
+  color: red;
+}
+
+.com_rquote_create_input_label span {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+ color:brown;
+}
+
+

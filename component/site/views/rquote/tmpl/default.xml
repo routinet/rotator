@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="COM_RQUOTE_RQUOTE_VIEW_DEFAULT_TITLE">
+    <message>COM_RQUOTE_RQUOTE_VIEW_DEFAULT_DESC</message>
+  </layout>
+  <fields name="request" addfieldpath="/administrator/components/com_rquote/models/fields">
+    <fieldset name="request">
+      <field
+        name="id"
+        type="int"
+        extension="com_rquote"
+        label="COM_RQUOTE_RQUOTE_FIELD_RQUOTE_LABEL"
+        description="COM_RQUOTE_RQUOTE_FIELD_RQUOTE_DESC"
+        required="true"
+        />
+        <field
+			name="show_quote"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_QUOTE_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_QUOTE_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_author"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_AUTHOR_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_AUTHOR_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field
+			name="show_createdate"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_CREATEDATE_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_CREATEDATE_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="show_notes"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_NOTES_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_NOTES_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+			<field
+			name="use_css"
+			type="radio"
+			label="USE_CSS_FILE?"
+			description="USE_CSS_FILE_DESC"
+			default="0"
+		>
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+		</field>
+		
+		
+    </fieldset>
+  </fields>
+</metadata>

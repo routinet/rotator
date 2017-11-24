@@ -1,0 +1,22 @@
+
+		
+div#toolbar div#toolbar-back button.btn span.icon-back::before {
+	content: "";
+}
+.rquote_quote{
+	color: #555555;
+	font-family: 'Titillium Maps',Arial;
+	font-size: 14pt;
+}
+.myRquote{
+	
+	padding-bottom: 20px;
+	float: left;
+	padding-right: 20px;
+}
+.rquote_element{
+	
+	width: 150px;
+	padding-top: 2px;
+}
+;

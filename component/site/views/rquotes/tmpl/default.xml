@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 74 2010-12-01 22:04:52Z kevin burke $ -->
+<metadata>
+	<layout title="COM_RQUOTE_RQUOTE_VIEW_MULTY_DEFAULT_TITLE">
+		<message>COM_RQUOTE_RQUOTE_VIEW_MULTY_DEFAULT_DESC</message>
+	</layout>
+	<fields name="request">
+                <fieldset name="request">
+
+			<field
+			name="catid"
+			type="category"
+			label="COM_RQUOTE_RQUOTE_FIELD_SHOW_CATEGORY_LABEL"
+			description="COM_RQUOTE_RQUOTE_FIELD_SHOW_CATEGORY_DESC"
+			extension="com_rquote"
+			default=""
+		/>
+		<field
+			name="number_items"
+			type="int"
+			label="COM_RQUOTE_RQUOTE_FIELD_SHOW_NUMBER_ITEMS_LABEL"
+			description="COM_RQUOTE_RQUOTE_FIELD_SHOW_NUMBER_ITEMS_DESC"
+			extension="com_rquote"
+			default="5"
+		/>	
+<field
+			name="sort_order"
+			type="list"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SORT_ORDER_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_SORT_ORDER_DESC"
+			default="0"
+		>
+			<option value="1">COM_RQUOTE_RQUOTE_CONFIG_ASCENDING</option>
+			<option value="0">COM_RQUOTE_RQUOTE_CONFIG_DESCENDING</option>
+		</field>
+		
+		<field
+			name="sort_column"
+			type="list"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SORT_COLUMN_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_SORT_COLUMN_DESC"
+			default="0"
+		>
+		<option value="0">COM_RQUOTE_RQUOTE_HEADING_ID</option>
+		<option value="1">COM_RQUOTE_RQUOTE_HEADING_DAILY_NUMBER</option>
+		<option value="2">COM_RQUOTE_RQUOTE_HEADING_QUOTE</option>
+		<option value="3">COM_RQUOTE_RQUOTE_HEADING_AUTHOR</option>
+		<option value="4">COM_RQUOTE_RQUOTE_HEADING_NOTES</option>
+		<option value="5">COM_RQUOTE_RQUOTE_HEADING_CREATEDATE</option>
+		
+		</field>
+		
+		<field
+			name="show_quote"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_QUOTE_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_QUOTE_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_author"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_AUTHOR_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_AUTHOR_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field
+			name="show_createdate"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_CREATEDATE_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_CREATEDATE_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+
+		<field
+			name="show_notes"
+			type="radio"
+			label="COM_RQUOTE_RQUOTE_CONFIG_SHOW_NOTES_LABEL"
+			description="COM_RQUOTE_RQUOTE_CONFIG_SHOW_NOTES_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+
+		<field
+			name="use_css"
+			type="radio"
+			label="USE_CSS_FILE?"
+			description="USE_CSS_FILE_DESC"
+			default="0"
+		>
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+		
+		
+		
+		</field>
+
+		</fieldset>
+	</fields>
+</metadata>
+
