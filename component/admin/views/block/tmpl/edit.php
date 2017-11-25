@@ -1,7 +1,9 @@
 <?php
 /**
- * Rotator component by Steve Binkowski.
- * Edit Template for a single Block.
+ * @package     Bink Rotator
+ * @subpackage  com_rotator
+ *
+ * @copyright   Copyright (C) 2017 Steve Binkowski.  All Rights Reserved.
  */
 
 // No direct access

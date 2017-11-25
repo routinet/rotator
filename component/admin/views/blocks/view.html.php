@@ -1,8 +1,10 @@
 <?php
 
 /**
- * Rotator component by Steve Binkowski.
- * View for a list of Blocks.
+ * @package     Bink Rotator
+ * @subpackage  com_rotator
+ *
+ * @copyright   Copyright (C) 2017 Steve Binkowski.  All Rights Reserved.
  */
 
 // No direct access to this file
@@ -40,14 +42,10 @@ class RotatorViewBlocks extends \Joomla\CMS\MVC\View\HtmlView {
 
     // Display the template
     parent::display($tpl);
-
-
   }
 
 
   protected function addToolBar() {
-    $state = $this->get('State');
-
     // Set the title.
     JToolBarHelper::title(JText::_('COM_ROTATOR_BLOCKS_MANAGER_LABEL'), 'block');
 
@@ -66,9 +64,7 @@ class RotatorViewBlocks extends \Joomla\CMS\MVC\View\HtmlView {
         JToolBarHelper::preferences('com_rotator');
         JToolBarHelper::help('RQUOTE_HELP', TRUE);*/
 
-
     JHtmlSidebar::setAction('index.php?option=com_rotator&view=blocks');
-
 
     JHtmlSidebar::addFilter(
       JText::_('JOPTION_SELECT_PUBLISHED'),
@@ -81,8 +77,5 @@ class RotatorViewBlocks extends \Joomla\CMS\MVC\View\HtmlView {
       'filter_category_id',
       JHtml::_('select.options', JHtml::_('category.options', 'com_rotator'), 'value', 'text', $this->state->get('filter.category_id'))
     );
-
-
   }
-
 }

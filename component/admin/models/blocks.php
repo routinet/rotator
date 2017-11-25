@@ -1,24 +1,12 @@
 <?php
 /**
- * Rotator component by Steve Binkowski.
- * Model for a list of Blocks.
+ * @package     Bink Rotator
+ * @subpackage  com_rotator
+ *
+ * @copyright   Copyright (C) 2017 Steve Binkowski.  All Rights Reserved.
  */
 
 defined('_JEXEC') or die;
-
-/*
- *   `id`           INT(11)             NOT NULL AUTO_INCREMENT,
-  `catid`        INT(11)             NOT NULL DEFAULT '0',
-  `title`        TEXT                NOT NULL,
-  `description`  TEXT                NOT NULL,
-  `content`      TEXT                NOT NULL,
-  `content_type` VARCHAR(20)         NOT NULL DEFAULT 'html',
-  `params`       TEXT                NOT NULL,
-  `published`    TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,
-  `created_by`   INT(11)             NOT NULL DEFAULT 0,
-  `created`      TIMESTAMP                    DEFAULT CURRENT_TIMESTAMP,
-
- */
 
 class RotatorModelBlocks extends RotatorModelBaseList {
 

@@ -1,8 +1,10 @@
 <?php
 
 /**
- * Rotator component by Steve Binkowski.
- * View for a single Block.
+ * @package     Bink Rotator
+ * @subpackage  com_rotator
+ *
+ * @copyright   Copyright (C) 2017 Steve Binkowski.  All Rights Reserved.
  */
 
 // No direct access to this file
@@ -26,7 +28,7 @@ class RotatorViewBlock extends \Joomla\CMS\MVC\View\HtmlView {
 
     // Check for errors.
     // TODO: this is deprecated.  Do we need to trap here?
-    if (count($errors = $this->get('Errors'))) {
+    if ($errors = array_filter($this->get('Errors'))) {
       JError::raiseError(500, implode('<br />', $errors));
       return FALSE;
     }
@@ -46,12 +48,11 @@ class RotatorViewBlock extends \Joomla\CMS\MVC\View\HtmlView {
    * Setting the toolbar
    */
   protected function addToolBar() {
-    // TODO: Does this work as intended?
     \Joomla\CMS\Factory::getApplication()->input->set('hidemainmenu', TRUE);
-    //JRequest::setVar('hidemainmenu', TRUE);
 
     $title = \Joomla\CMS\Language\Text::_($this->isNew ? 'COM_ROTATOR_CREATE_BLOCK' : 'COM_ROTATOR_EDIT_BLOCK');
     JToolBarHelper::title($title);
+
     // Built the actions for new and existing records.
     // For all records, allow for Save and Cancel.
     JToolBarHelper::apply('block.apply', 'JTOOLBAR_APPLY');

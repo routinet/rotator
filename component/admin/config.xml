@@ -18,7 +18,7 @@
 			class="inputbox"
 			validate="rules"
 			filter="rules"
-			component="com_rquote"
+			component="com_rotator"
 			section="component"
 		/>
 	</fieldset>

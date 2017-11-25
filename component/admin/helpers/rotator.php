@@ -1,8 +1,9 @@
 <?php
-
 /**
- * Rotator component by Steve Binkowski.
- * Helper Class.
+ * @package     Bink Rotator
+ * @subpackage  com_rotator
+ *
+ * @copyright   Copyright (C) 2017 Steve Binkowski.  All Rights Reserved.
  */
 
 // No direct access to this file
@@ -36,42 +37,6 @@ abstract class RotatorHelper {
       );
     }
 
-    // TODO: remove?
-    //JHtmlSidebar::addEntry(JText::_('COM_RQUOTE_SUBMENU_PREVIEW'), 'index.php?option=com_rquote&view=preview&extension=com_rquote', $submenu == 'preview');
   }
 
-  /**
-   * Get the actions
-   */
-  // TODO: not sure if this is necessary.  Did original allow public create?
-  /*
-   *
-  public static function getActions($messageId = 0) {
-    $user   = JFactory::getUser();
-    $result = new JObject;
-
-    if (empty($messageId)) {
-      $assetName = 'com_rquote';
-    }
-    else {
-      $assetName = 'com_rquote.message.' . (int) $messageId;
-    }
-
-    $actions = [
-      'core.admin',
-      'core.manage',
-      'core.create',
-      'core.edit',
-      'core.delete',
-      'core.edit.state',
-      'core.edit.filter_categoty_id',
-    ];
-
-    foreach ($actions as $action) {
-      $result->set($action, $user->authorise($action, $assetName));
-    }
-
-    return $result;
-  }
-  */
 }

@@ -3,7 +3,7 @@
  * @package     Bink Rotator
  * @subpackage  com_rotator
  *
- * @copyright   Copyright (C) 2016 Steve Binkowski.  All Rights Reserved.
+ * @copyright   Copyright (C) 2017 Steve Binkowski.  All Rights Reserved.
  */
 
 // No direct access
