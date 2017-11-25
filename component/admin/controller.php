@@ -1,41 +1,28 @@
 <?php
 
 /**
- * @version		$Id: rquote.php  2/5/2011 
- * @package		Joomla16.rquote
- * @subpackage	Components
- * @copyright	Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.
- * @author		Kevin Burke
- * @link		http://www.mytidbits.us
- * @license		License GNU General Public License version 2 or later
+ * Rotator component by Steve Binkowski.
+ * Central Controller for the extension.
  */
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
-// import Joomla controller library
-jimport('joomla.application.component.controller');
+class RotatorController extends \Joomla\CMS\MVC\Controller\BaseController {
 
-/**
- * General Controller of Rquote component
- */
-class RquoteController extends JControllerLegacy
-{
-	/**
-	 * display task
-	 *
-	 * @return void
-	 */
-//	function display($cachable = false) 
-	function display($cachable = false, $urlparams = false)
-	{
-		// set default view if not set
-		JRequest::setVar('view', JRequest::getCmd('view', 'Rquotes'));
+  /**
+   * display task
+   *
+   * @return void
+   */
+  function display($cachable = FALSE, $urlparams = FALSE) {
+    $app = \Joomla\CMS\Factory::getApplication();
 
-		// call parent behavior
-		parent::display($cachable);
+    // set default view if not set
+    $app->input->set('view', $app->input->get('view', 'Blocks'));
+    //JRequest::setVar('view', JRequest::getCmd('view', 'Blocks'));
 
-		// Set the submenu
-//		RquoteHelper::addSubmenu('messages');
-	}
+    // call parent behavior
+    parent::display($cachable);
+  }
 }

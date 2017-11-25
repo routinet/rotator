@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="id" type="hidden"/>
+        <field
+                name="catid"
+                type="category"
+                extension="com_rotator"
+                label="COM_ROTATOR_FIELD_LABEL_CATID"
+                description="COM_ROTATOR_FIELD_DESC_CATID"
+                published="1,0">
+            <option value="*">JOPTION_SELECT_CATEGORY</option>
+        </field>
+
+        <field
+                name="title"
+                type="textarea"
+                label="COM_ROTATOR_FIELD_LABEL_TITLE"
+                description="COM_ROTATOR_FIELD_DESC_TITLE"
+                rows="3"
+                cols="40"
+                filter="safehtml"
+        />
+
+        <field
+                name="content"
+                type="editor"
+                label="COM_ROTATOR_FIELD_LABEL_CONTENT"
+                description="COM_ROTATOR_FIELD_DESC_CONTENT"
+                filter="safehtml"
+                required="true"
+                buttons="true"
+                hide="readmore,pagebreak"
+                width="500"
+        />
+
+        <field
+                name="description"
+                type="textarea"
+                label="COM_ROTATOR_FIELD_LABEL_DESCRIPTION"
+                description="COM_ROTATOR_FIELD_DESC_DESCRIPTION"
+                rows="3"
+                cols="40"
+                filter="string"
+        />
+
+        <field
+                name="published"
+                type="radio"
+                label="COM_ROTATOR_FIELD_LABEL_PUBLISHED"
+                description="COM_ROTATOR_FIELD_DESC_PUBLISHED"
+                default="1"
+                class="btn-group btn-group-yesno">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+    </fieldset>
+
+</form>
+

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Id: rquote.xml 2/5/2011 -->
 <config>
 		<fieldset
 		name="component">
-		label="COM_RQUOTE_COMPONENT_LABEL"
+		label="COM_ROTATOR_COMPONENT_LABEL"
 		description="JCONFIG_PERMISSIONS_DESC"
 	>
 	</fieldset>
