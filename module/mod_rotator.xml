@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>Bink Rotator Module</name>
+    <author>Steve Binkowski</author>
+    <creationDate>Nov 2017</creationDate>
+    <copyright>(C) 2017</copyright>
+    <version>1.0</version>
+    <description>MOD_ROTATOR_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_rotator">mod_rotator.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_rotator.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_rotator.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="general">
+                <field
+                        type="category"
+                        name="catid"
+                        label="MOD_ROTATOR_FIELD_LABEL_CATID"
+                        extension="com_rotator"
+                        description="MOD_ROTATOR_FIELD_DESC_CATID"
+                        published="1"
+                />
+                <field
+                        name="content_first"
+                        type="radio"
+                        label="MOD_ROTATOR_FIELD_LABEL_CONTENTFIRST"
+                        description="MOD_ROTATOR_FIELD_DESC_CONTENTFIRST"
+                        default="1"
+                        class="btn-group btn-group-yesno">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="show_title"
+                        type="radio"
+                        label="MOD_ROTATOR_FIELD_LABEL_SHOWTITLE"
+                        description="MOD_ROTATOR_FIELD_DESC_SHOWTITLE"
+                        default="1"
+                        class="btn-group btn-group-yesno">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="show_desc"
+                        type="radio"
+                        label="MOD_ROTATOR_FIELD_LABEL_SHOWDESC"
+                        description="MOD_ROTATOR_FIELD_DESC_SHOWDESC"
+                        default="0"
+                        class="btn-group btn-group-yesno">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            <fieldset name="carousel">
+                <field
+                        name="owl_integration"
+                        type="radio"
+                        label="MOD_ROTATOR_FIELD_LABEL_OWLINTEGRATION"
+                        description="MOD_ROTATOR_FIELD_DESC_OWLINTEGRATION"
+                        default="1"
+                        class="btn-group btn-group-yesno">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="owl_theme"
+                        type="radio"
+                        label="MOD_ROTATOR_FIELD_LABEL_OWLTHEME"
+                        description="MOD_ROTATOR_FIELD_DESC_OWLTHEME"
+                        default="1"
+                        class="btn-group btn-group-yesno">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="owl_params"
+                        type="textarea"
+                        label="MOD_ROTATOR_FIELD_LABEL_OWLPARAMS"
+                        description="MOD_ROTATOR_FIELD_DESC_OWLPARAMS"
+                        rows="5"
+                        cols="100"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
